@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='icon' type='image/png' href='images/favicon.ico'>
+        <script type="module" src="js/main.js"></script>
+        <title>Calendar Puzzle</title>
+        <style>
+          #stage {
+            position: relative;
+            width: max-content;
+          }
+          canvas { position: absolute; 
+          width: 800px;
+          height: 600px}
+          #game-layer { 
+            z-index: 2; 
+          }
+          #board-layer { 
+            z-index: 1; 
+          }
+          main {
+            display: flex;
+          }
+          aside {
+            width: 40%;
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: left;
+            font-style: italic;
+            color: #3e7997;
+          }
+          a {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: bold;
+          }
+          a:visited {
+            color: #3e7997;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+        </style>
+    </head>
+    <body>
+      <main>
+        <div id="stage"></div>
+        <aside><h3>Calendar Puzzle</h3>Rearrange the shapes on the board to display the date.<br><ul>
+          <li>Drag pieces into place using the mouse</li>
+          <li>Double click to rotate a piece</li>
+          <li>Right click to flip a piece</li>
+        </ul>
+        Once you have obtained a solution, you can use the date control to select the solution. The solution is linked to your unique identifier in the URL (<span id='unique_id'></span>).
+        You can bookmark this page to come back to your set of solutions at anytime.
+        <hr>
+        This is an unoffical tracker for the <a target="_blank" href="https://www.dragonfjord.com/">DragonFjord</a> - <a target="_blank" href="https://www.dragonfjord.com/product/a-puzzle-a-day/">A-Puzzle-A-Day</a>. If you haven't already do purchase the puzzle.
+      </aside>
+      </main>
+    </body>
+</html>
